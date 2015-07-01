@@ -2,3 +2,18 @@ mtdev2tuio is a simple application for converting touch events
 captured from the Ubuntu mtdev library to the standart TUIO 1.1 protocol.
 
 For compile and run instructions, see doc/index.html.
+
+
+to run on a pi
+
+git clone REPO
+
+sudo apt-get install libmtdev-dev
+sudo apt-get install liblo-dev
+
+cd REPO
+
+make
+
+
+sudo ./mtdev2tuio /dev/input/by-id/usb-Quanta_OpticalTouchScreen_0000-event-if00 [osc.udp://192.168.2.1:1234]
