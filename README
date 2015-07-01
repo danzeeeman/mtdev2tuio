@@ -6,12 +6,8 @@ For compile and run instructions, see doc/index.html.
 
 to run on an RPI:
 
-    git clone REPO
-    
-    sudo apt-get install libmtdev-dev liblo-dev
-    
-    cd REPO
-    
-    make
-    
-    sudo ./mtdev2tuio /dev/input/by-id/{DEVICE} osc.udp://IP.ADDRESS.OF.APP:PORT.OF.APP
+git clone REPO
+sudo apt-get install libmtdev-dev liblo-dev
+cd REPO
+make
+sudo ./mtdev2tuio /dev/input/by-id/{DEVICE} osc.udp://IP.ADDRESS.OF.APP:PORT.OF.APP
